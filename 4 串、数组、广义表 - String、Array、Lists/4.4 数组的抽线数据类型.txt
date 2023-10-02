@@ -1,0 +1,19 @@
+ADT Array{
+    数据类型：
+        jⁱ = 0, ... bⁱ - 1， i = 1,2,...,n                               j为数组元素第i维下标
+        D = {Aj¹j²...jⁿ | Aj¹j²...jⁿ ∈ ElemSet}
+    数据关系：
+        R = {< Aj¹...jⁱ...jⁿ , Aj¹...jⁱ⁺¹...jⁿ > | 0 ≤ jk ≤ bk-1, 且k≠i, 0≤  jⁱ ≤ bk-2，Aj¹...jⁱ...jⁿ , Aj¹...jⁱ⁺¹...jⁿ  ∈ D, i=2,...,n}
+    基本操作:
+        InitArray(&A,n,bound_1,...,bound_n)//构造数组A
+        DestroyArray (&A)//销毁数组A
+        Value(A,&e,index_1,...,index_n)//取数组元素值
+        Assign (A,&e,index_1,...,index_n)//给数组元素赋值
+}ADT Array
+
+
+例:二维数组的抽象数据类型的数据对象和数据关系的定义
+n=2(维数为2，二维数组)
+b1:第1维长度(行数)
+b2:第2维长度(列数)
+Aj¹j²∶第1维下标为j1，第2维下标为j2

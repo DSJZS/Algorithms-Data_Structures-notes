@@ -1,0 +1,24 @@
+ADT String {
+    数据对象:
+        D={aⁱ | aⁱ ∈ CharacterSet, i=1,2...,n, n≥0}
+    数据关系:
+        R={<aⁱ⁻¹, aⁱ >| aⁱ⁻¹, aⁱ∈D, i=2,...,n }
+    基本操作:
+        StrAssign (&T,chars)  //  串赋值
+        StrCompare (S,T)  //  串比较
+        StrLength (S)  //  求串长
+        Concat(&T,S1,S2)  //  串连结
+        SubString(&Sub,S,pos,len)  //  求子串
+        StrCopy(&T,S)  //  串拷贝
+        StrEmpty(S)  //  串判空
+        ClearString (&S)  //  清空串
+        Index(S,T,pos)  //  子串的位置
+        Replace(&S,T,V)  //串替换
+        Strlnsert(&S,pos,T)  //  子串插入
+        StrDelete(&s,pos,len)  //  子串删除
+        DestroyString(&S)  //  串销毁
+}ADT String
+
+S 是主串
+T 是字串
+pos 是字串位置
