@@ -1,0 +1,26 @@
+二叉树的抽象数据类型定义
+
+ADT BinaryTree{
+    数据对象D:
+        D是具有相同特性(元素类型相同)的数据元素的集合。
+    数据关系R:
+        若D=∅，则R=∅;
+        若D≠∅，则R={H};H是如下二元关系:
+        ①root唯一  //  关于根的说明
+        ②Dj  ∩  Dk= ∅  //  关于子树不相交的说明
+        ③...  //  关于数据元素的说明
+        ④...  //  关于左子树和右子树的说明
+    基本操作P:  //  至少有 20 个
+        CreateBiTree(&T,definition)
+            初始条件;definition给出二叉树T的定义。
+            操作结果:按definition构造二叉树T
+        PreOrderTraverse(T)
+            初始条件:二叉树T存在。
+            操作结果:先序遍历T，对每个结点访问一次。                                
+        lnOrderTraverse(T)
+            初始条件:二叉树T存在。
+            操作结果:中序遍历T，对每个结点访问一次。 
+        PostOrderTraverse(T)
+            初始条件:二叉树T存在。
+            操作结果:后序遍历T，对每个结点访问一次。
+}ADT BinaryTree
